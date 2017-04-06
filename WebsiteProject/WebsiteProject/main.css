@@ -1,0 +1,15 @@
+﻿.def-btn {
+    padding: 25px;
+    font-size: 20px;
+    font-family: Alef Hebrew;
+}
+
+.sign-up {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+body {
+    font-family: Alef Hebrew;
+    direction: rtl;
+}
