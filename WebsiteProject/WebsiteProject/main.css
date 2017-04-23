@@ -4,7 +4,7 @@
     font-family: Alef Hebrew;
 }
 
-.sign-up {
+.sign-form {
     font-size: 24px;
     font-weight: bold;
 }
@@ -12,4 +12,50 @@
 body {
     font-family: Alef Hebrew;
     direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    float: left;
+    padding: 10px;
+}
+
+.verse-div {
+    height: 66vh;
+    width: 100vw;
+    font-size: 55px;
+    background: #eee;
+    text-align: center;
+    display: table;
+}
+
+.verse-centered {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.timer-span {
+    display: table;
+    font-size: 100px;
+    width: 15vw;
+    height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.timer-div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.marked {
+    font-weight: bold;
+    color: #2395ba;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: inline;
 }

@@ -15,11 +15,29 @@ namespace WebsiteProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string path = Server.MapPath("~");
+            DBUtil util = new DBUtil();
 
-            using (StreamReader reader = new StreamReader(path + "Greetings.txt"))
+            if (Session["userObj"] != null)
             {
-                greetings = reader.ReadToEnd();
+                Response.Redirect("Profile.aspx");
+                return;
+            }
+
+            if (Request.HttpMethod == "GET")
+            {
+                string path = Server.MapPath("~");
+
+                using (StreamReader reader = new StreamReader(path + "Greetings.txt"))
+                {
+                    greetings = reader.ReadToEnd();
+                }
+            }
+            else
+            {
+                if (Request.Form["signUp"] != null)
+                    Response.Redirect("SignUp.aspx");
+                else
+                    Response.Redirect("SignIn.aspx");
             }
         }
     }

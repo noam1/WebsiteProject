@@ -3,3 +3,4 @@ C:\Users\User\documents\visual studio 2010\Projects\WebsiteProject\WebsiteProjec
 C:\Users\User\documents\visual studio 2010\Projects\WebsiteProject\WebsiteProject\obj\Debug\WebsiteProject.dll
 C:\Users\User\documents\visual studio 2010\Projects\WebsiteProject\WebsiteProject\obj\Debug\WebsiteProject.pdb
 C:\Users\User\Documents\Visual Studio 2010\Projects\WebsiteProject\WebsiteProject\obj\Debug\WebsiteProject.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2010\Projects\WebsiteProject\WebsiteProject\bin\WebsiteProject.dll.config

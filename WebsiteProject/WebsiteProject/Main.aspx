@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <form>
+        <form id="form1" runat="server">
             <div align="center">
             <input type="submit" name="signIn" value="התחבר צדיק!" class="btn btn-primary def-btn" />
             <input type="submit" name="signUp" value="הירשם עכשיו!" class="btn btn-primary def-btn" />

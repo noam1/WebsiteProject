@@ -16,9 +16,11 @@ namespace WebsiteProject
         private int tofiCount;
         private int solveCount;
         private int failCount;
+        private float avgTypeSpeed;
 
-        public User(int id, string fullName, string userName, string password, string email, int rank, int tofiCount, int solveCount, int failCount)
+        public User(int id, string fullName, string userName, string password, string email, int rank, int tofiCount, int solveCount, int failCount, float avgTypeSpeed)
         {
+            this.id = id;
             this.fullName = fullName;
             this.userName = userName;
             this.password = password;
@@ -27,6 +29,7 @@ namespace WebsiteProject
             this.tofiCount = tofiCount;
             this.solveCount = solveCount;
             this.failCount = failCount;
+            this.avgTypeSpeed = avgTypeSpeed;
         }
 
         public int GetId()
@@ -79,7 +82,7 @@ namespace WebsiteProject
             return rank;
         }
 
-        public void SetRak(int rank)
+        public void SetRank(int rank)
         {
             this.rank = rank;
         }
@@ -112,6 +115,16 @@ namespace WebsiteProject
         public void SetFailCount(int failCount)
         {
             this.failCount = failCount;
+        }
+
+        public float GetAvgTypeSpeed()
+        {
+            return avgTypeSpeed;
+        }
+
+        public void SetAvgTypeSpeed(float avgTypeSpeed)
+        {
+            this.avgTypeSpeed = avgTypeSpeed;
         }
     }
 }

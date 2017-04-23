@@ -21,28 +21,31 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <link rel="Stylesheet" href="main.css" />
+        <script src="signUp.js"></script>
 
         <title>מרוץ הסת"ם - הרשמה</title>
     </head>
 
     <body>
-        <form id="form1" runat="server">
+        <form id="form1" runat="server" onsubmit="return validate();">
             <div class="container">
                 <div class="jumbotron" style="font-size: 65px;">
                     הירשם צדיק!
                 </div>
             </div>
 
-            <div class="container sign-up">
+            <div class="container sign-form">
                 <div class="well">
+                    <h5 style="color: red;"> <%=errorMessage %> </h5>
+
                     שם בישראל
-                    <input type="text" name="fullname" class="form-control" />
+                    <input type="text" name="fullname" class="form-control" id="fullname" />
                     שם משתמש
-                    <input type="text" name="username" class="form-control" />
+                    <input type="text" name="username" class="form-control" id="username" />
                     סיסמא
-                    <input type="password" name="password" class="form-control" />
+                    <input type="password" name="password" class="form-control" id="password" />
                     אי-מייל
-                    <input type="email" name="email" class="form-control" /> <br />
+                    <input type="email" name="email" class="form-control" id="email" /> <br />
 
                     <u> רב אהוב </u> <br />
                     <fieldset id="rabi">
