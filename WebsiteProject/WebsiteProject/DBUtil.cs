@@ -103,6 +103,18 @@ namespace WebsiteProject
             connection.Close();
         }
 
+        public void DeleteUser(User user)
+        {
+            connection.Open();
+
+            SqlCommand command = connection.CreateCommand();
+            command.CommandText = String.Format("DELETE FROM Users WHERE (Id={0})", user.GetId());
+
+            command.ExecuteNonQuery();
+
+            connection.Close();
+        }
+
         public string GetRankName(int rank)
         {
             connection.Open();

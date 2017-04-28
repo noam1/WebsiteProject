@@ -36,7 +36,7 @@
 
             <div class="container sign-form">
                 <div class="well">
-                    <h5 style="color: red;"> <%=errorMessage %> </h5>
+                    <h5 style="color: red;"> <%=errorMessage %> </h5><br /><br />
 
                     שם בישראל
                     <input type="text" name="fullname" class="form-control" id="fullname" />

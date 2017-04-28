@@ -31,8 +31,9 @@
                 <h1> פרופיל </h1>
                 <div class="left" style="display: inline;">
                     <input type="submit" name="play" value="התחל לשחק!" class="btn btn-success def-btn" style="margin: 10px" /> <br />
-                    <input type="submit" name="change" value="שנה פרטים" class="btn btn-primary def-btn" style="margin: 10px" /> <br />
-                    <input type="submit" name="disconnect" value="התנתק" class="btn btn-danger def-btn" style="margin: 10px" />
+                    <input type="submit" name="disconnect" value="התנתק" class="btn btn-primary def-btn" style="margin: 10px" /><br /><br />
+
+                    <input type="submit" name="delete" value="מחק משתמש" class="btn btn-danger def-btn" style="margin: 10px" /> <br />
                 </div>
                 
                 <br /><br /><br />
@@ -40,7 +41,29 @@
                 <h3> <label> שם בישראל: </label> </h3> <h4> <%=fullName %> </h4> <br /><br />
                 <h3> <label> שם משתמש: </label> </h3> <h4> <%=username %> </h4> <br /><br />
                 <h3> <label> סוכריות טופי: </label> </h3> <h4> <%=tofiCount %> </h4>  <br /><br />
-                <h3> <label> דרגה: </label> </h3> <h4> <%=rank %> </h4> <br />
+                <h3> <label> דרגה: </label> </h3> <h4> <%=rank %> </h4> <br /> <br />
+
+                <div style="margin-top: 10vh; font-size: 20px;">
+                    <table align="center">
+                        <tr>
+                            <th> סטטיסטיקות משחק </th>
+                        </tr>
+                        <tr>
+                            <td><u>הצלחה</u></td>
+                            <td><%=successCount %></td>
+                        </tr>
+                        <tr>
+                            <td><u>כשלון</u></td>
+                            <td><%=failCount %></td>
+                        </tr>
+                        <tr>
+                            <td><u>יחס הצלחה</u></td>
+                            <td><%=ratio %>%</td>
+                        </tr>
+                    </table>
+                </div>
+
+                
             </div>
         </form>
     </body>

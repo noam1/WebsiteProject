@@ -62,10 +62,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database.mdf" />
-    <Content Include="Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
+    <Content Include="carpet_rug.png" />
     <Content Include="End.aspx" />
     <Content Include="Game.aspx" />
     <Content Include="game.js" />

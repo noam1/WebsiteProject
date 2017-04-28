@@ -34,7 +34,7 @@
 
             <div class="verse-div">
                 <span id="verse" class="verse-centered">
-                    <span id="solved" class="marked"></span><span id="unsolved" style="font-weight: bold;"></span>
+                    <span id="solved" class="marked"></span><span id="unsolved" class="unmarked"></span>
                 </span>
             </div>
             

@@ -30,10 +30,15 @@
             <div class="container jumbotron">
                 <div style="font-size: 75px;"><%=msg %></div> <br /><br />
                 <div style="font-size: 40px;"><%=speech %></div> <br /> <br />
-                <div style="font-size: 50px;"><%=prizeStr %></div> <br /> <br />
+                <div style="font-size: 50px; text-align: center;"><%=prizeStr %></div> <br /> <br />
 
-                <a style="display: inline; margin: 10px;" class="btn btn-success def-btn" href="Game.aspx">משחק נוסף!</a> 
-                <a style="display: inline; margin: 10px;" class="btn btn-danger def-btn" href="Profile.aspx">חזרה לפרופיל</a>
+                <div style="font-size: 40px;"><%=bestTimeStr %></div>
+                <div style="font-size: 40px;"><%=myTimeStr %></div> <br /><br />
+
+                <div style="text-align: center;">
+                    <a style="display: inline; margin: 10px;" class="btn btn-success def-btn" href="Game.aspx">משחק נוסף!</a> 
+                    <a style="display: inline; margin: 10px;" class="btn btn-danger def-btn" href="Profile.aspx">חזרה לפרופיל</a>
+                </div>
             </div>
         </form>
     </body>

@@ -13,6 +13,9 @@ namespace WebsiteProject
         public string username;
         public int tofiCount;
         public string rank;
+        public string successCount;
+        public string failCount;
+        public string ratio;
 
         private User user;
         private DBUtil dbUtil;
@@ -35,6 +38,13 @@ namespace WebsiteProject
 
             int rankNum = user.GetRank();
             rank = dbUtil.GetRankName(rankNum);
+
+            int succes = user.GetSolveCount();
+            int fail = user.GetFailCount();
+            ratio = (((float)succes / fail) * 100).ToString();
+
+            successCount = succes.ToString();
+            failCount = fail.ToString();
             
             // Send to game screen.
             if (Request.Form["play"] != null)
@@ -46,10 +56,14 @@ namespace WebsiteProject
             {
                 Session["userObj"] = null;
                 Response.Redirect("Main.aspx");
+                return;
             }
-            else if(Request.Form["change"] != null)
+            else if(Request.Form["delete"] != null)
             {
-
+                dbUtil.DeleteUser(user);
+                Session["userObj"] = null;
+                Response.Redirect("Main.aspx");
+                return;
             }
         }
     }

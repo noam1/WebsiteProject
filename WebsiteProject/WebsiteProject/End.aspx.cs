@@ -13,6 +13,9 @@ namespace WebsiteProject
         public string speech;
         public string prizeStr;
 
+        public string bestTimeStr;
+        public string myTimeStr;
+
         private User user;
         private DBUtil dbUtil;
 
@@ -47,12 +50,14 @@ namespace WebsiteProject
             }
 
             double delta = double.Parse(Request.Form["delta"]);
+            myTimeStr = "הזמן שלך: " + delta.ToString() + " שניות";
 
             int verseId = int.Parse(Session["verseId"].ToString());
             Session["verseId"] = null;
 
             Verse verse = dbUtil.GetVerseById(verseId);
             double bestTime = verse.GetBestTime();
+            bestTimeStr = "זמן שיא: " + (float)((int)(bestTime * 1000)) / 1000 + " שניות";
 
             double ratio = delta / bestTime;
 

@@ -14,6 +14,9 @@ body {
     direction: rtl;
     margin: 0;
     padding: 0;
+    background-image: url("carpet_rug.png");
+    background-repeat: repeat;
+    background-size: 20%;
 }
 
 .left {
@@ -25,9 +28,10 @@ body {
     height: 66vh;
     width: 100vw;
     font-size: 55px;
-    background: #eee;
+    background: rgba(238, 238, 238, 0.5);
     text-align: center;
     display: table;
+    opacity: 1;
 }
 
 .verse-centered {
@@ -54,6 +58,12 @@ body {
 .marked {
     font-weight: bold;
     color: #2395ba;
+    background-color: rgba(255, 216, 0, 0.75);
+}
+
+.unmarked {
+    font-weight: bold;
+    background-color: rgba(238, 238, 238, 0.5);
 }
 
 h1, h2, h3, h4, h5, h6 {
